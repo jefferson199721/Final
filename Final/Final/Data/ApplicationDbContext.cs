@@ -25,6 +25,7 @@ namespace Final.Data
         }
         public DbSet<IdentityRole> IdentityRole { get; set; }
         public DbSet<Final.Models.Cliente> Cliente { get; set; }
-        
+        public DbSet<Final.Models.Propietarios> Propietarios { get; set; }
+
     }
 }

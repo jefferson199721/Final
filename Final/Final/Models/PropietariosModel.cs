@@ -12,14 +12,13 @@ namespace Final.Models
 {    
     public class PropietariosModel
     {
-       /* public ApplicationDbContext _contexto;
-         public PropietariosModel(ApplicationDbContext context)
+        public ApplicationDbContext _contexto;
+        public PropietariosModel(ApplicationDbContext context)
         {
             _contexto = context;
         }
 
         public IdentityError Nuevo_Propietarios_Model(
-           string cedula,
            string nombre,
            string apellido,
            string direccion,
@@ -27,7 +26,7 @@ namespace Final.Models
            string telefono)
         {
             IdentityError resultado = new IdentityError();
-            Propietarios propietarios = new Propietarios()
+            Propietarios propietario = new Propietarios()
             {
                 Nombres =nombre,
                 Apellidos=apellido,
@@ -38,7 +37,8 @@ namespace Final.Models
             };
             try
             {
-                _contexto.Propietarios.Add(propietarios);
+               
+                _contexto.Propietarios.Add(propietario);
                 _contexto.SaveChanges();
                 resultado = new IdentityError()
                 {
@@ -57,7 +57,7 @@ namespace Final.Models
 
             }
             return resultado;
-        }*/
+        }
 
 
     }
