@@ -9,7 +9,7 @@ namespace Final.Models
     {
         public int ClienteId { get; set; }
         public string NombresJEff123ggggggg { get; set; }
-        public string Apellidos { get; set; }
+        public string Apellidosgggg { get; set; }
         public string Telefono { get; set; }
         public string Correo { get; set; }
         public string Categoria { get; set; }
