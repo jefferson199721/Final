@@ -12,7 +12,7 @@ namespace Final.Models
     {
         public ApplicationDbContext _contexto;
 
-        public ClientesModel(ApplicationDbContext contexto)
+       /* public ClientesModel(ApplicationDbContext contexto)
         {
             _contexto = contexto;
         }
@@ -178,6 +178,6 @@ namespace Final.Models
             return listaRegresa;
 
 
-        }
+        }*/
     }
 }
