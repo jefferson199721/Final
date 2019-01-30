@@ -11,8 +11,8 @@ using System;
 namespace Final.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190130203852_clientes")]
-    partial class clientes
+    [Migration("20190130205522_hgh")]
+    partial class hgh
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

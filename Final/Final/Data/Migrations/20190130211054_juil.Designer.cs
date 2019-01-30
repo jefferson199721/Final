@@ -11,8 +11,8 @@ using System;
 namespace Final.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190130201630_jeff")]
-    partial class jeff
+    [Migration("20190130211054_juil")]
+    partial class juil
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -70,6 +70,30 @@ namespace Final.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("Final.Models.Cliente", b =>
+                {
+                    b.Property<int>("ClienteId")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Apellidos");
+
+                    b.Property<string>("Categoria");
+
+                    b.Property<string>("Correo");
+
+                    b.Property<DateTime>("FechaIngreso");
+
+                    b.Property<string>("Garantia");
+
+                    b.Property<string>("Nombres");
+
+                    b.Property<string>("Telefono");
+
+                    b.HasKey("ClienteId");
+
+                    b.ToTable("Cliente");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

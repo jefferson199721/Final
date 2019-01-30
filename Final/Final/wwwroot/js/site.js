@@ -71,7 +71,7 @@ var nuevo_Cliente = () => {
 ////Ingreso de Un/////
 var Un_Cliente = (ClienteId) => {
     var accion = "Clientes/Un_Cliente_Controller";
-    var cliente = new ClaseClientes(' ', ' ', ' ', ' ', ' ', ' ', ' ', accion);
+    var cliente = new ClaseClientes(' ', ' ', ' ', ' ', ' ', ' ', ' ',' ', accion);
     cliente.Un_Cliente(ClienteId);
 }
 var Un_Proveedor = (proveedorId) => {
