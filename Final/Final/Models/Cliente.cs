@@ -12,7 +12,7 @@ namespace Final.Models
         public string Apellidos { get; set; }
         public string Telefono { get; set; }
 
-        public string Correossssss { get; set; }
+        public string Correo { get; set; }
         public string Categoria{ get; set; }
 
         public string Correo { get; set; }
