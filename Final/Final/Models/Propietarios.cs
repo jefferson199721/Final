@@ -9,18 +9,12 @@ namespace Final.Models
 {
     public class Propietarios
     {
-
-       
-        public int PropietarioId { get; set; }
-        
-        public string Nombres { get; set; }
-      
-        public string Apellidos { get; set; }
-    
-        public string Direccion { get; set; }
-        
-        public string Correo { get; set; }
-     
-        public string Telefono { get; set; }
+              
+       public int PropietariosId { get; set; }
+       public string Nombres { get; set; }
+       public string Apellidos { get; set; }
+       public string Direccion { get; set; }
+       public string Correo { get; set; }
+       public string Telefono { get; set; }
     }
 }
