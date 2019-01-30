@@ -177,9 +177,6 @@ namespace Final.Models
             listaRegresa.Add(objeto);
             return listaRegresa;
         }
-        }
-      
-
-
+        
     }
 }
