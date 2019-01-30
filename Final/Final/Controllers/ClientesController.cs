@@ -6,6 +6,7 @@ using Final.Data;
 using Final.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Final.Controllers
 {

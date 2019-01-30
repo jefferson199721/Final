@@ -11,10 +11,10 @@ namespace Final.Models
     public class ClientesModel
     {
         public ApplicationDbContext _contexto;
-        public ClientesModel(ApplicationDbContext contextos)
+        public ClientesModel(ApplicationDbContext contexto)
         {
-            _contexto = contextos;
-        } 
+            _contexto = contexto;
+        }
 
         public IdentityError Nuevo_Cliente_Model(
             string Nombres,
@@ -35,9 +35,11 @@ namespace Final.Models
                 Categoria = Categoria,
                 Garantia = Garantia,
                 FechaIngreso = FechaIngreso
+
             };
             try
             {
+
                 _contexto.Cliente.Add(cliente);
                 _contexto.SaveChanges();
                 resultado = new IdentityError()
