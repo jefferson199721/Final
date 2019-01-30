@@ -7,5 +7,10 @@ namespace Final.Models
 {
     public class Sucursal
     {
+        public int SucursalId { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono { get; set; }
+       
+
     }
 }
