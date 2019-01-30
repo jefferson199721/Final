@@ -11,7 +11,7 @@ namespace Final.Controllers
 {
     public class ClientesController : Controller
     {
-       /* private readonly ApplicationDbContext _context;
+       private readonly ApplicationDbContext _context;
 
         private readonly ClientesModel _clientes_model;
 
@@ -58,6 +58,6 @@ namespace Final.Controllers
         public List<object[]> Lista_Clientes_Controller()
         {
             return _clientes_model.Lista_Cliente_Model();
-        }*/
+        }
     }
 }
