@@ -8,6 +8,7 @@ using Final.Models;
 
 namespace Final.Models
 {
+
     public class PropietariosModel
     {
 
