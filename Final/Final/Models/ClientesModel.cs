@@ -38,7 +38,7 @@ namespace Final.Models
 
             };
             try
-            {
+            {                
                 _contexto.Cliente.Add(cliente);            
                 _contexto.SaveChanges();
                 resultado = new IdentityError()
@@ -179,5 +179,4 @@ namespace Final.Models
 
         }
     }
-}
 }
