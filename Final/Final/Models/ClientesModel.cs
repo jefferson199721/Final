@@ -10,7 +10,7 @@ namespace Final.Models
 {
     public class ClientesModel
     {
-        public ApplicationDbContext _contexto;
+        /*public ApplicationDbContext _contexto;
         public ClientesModel(ApplicationDbContext contextos)
         {
             _contexto = contextos;
@@ -175,7 +175,7 @@ namespace Final.Models
             listaRegresa.Add(objeto);
             return listaRegresa;
         }
-        }
+        }*/
       
 
 
