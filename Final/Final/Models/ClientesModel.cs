@@ -11,11 +11,10 @@ namespace Final.Models
     public class ClientesModel
     {
         public ApplicationDbContext _contexto;
-
-       /* public ClientesModel(ApplicationDbContext contexto)
+        public ClientesModel(ApplicationDbContext contextos)
         {
-            _contexto = contexto;
-        }
+            _contexto = contextos;
+        } 
 
         public IdentityError Nuevo_Cliente_Model(
             string Nombres,
@@ -36,11 +35,10 @@ namespace Final.Models
                 Categoria = Categoria,
                 Garantia = Garantia,
                 FechaIngreso = FechaIngreso
-
             };
             try
             {
-                _contexto.Cliente.Add(cliente);            
+                _contexto.Cliente.Add(cliente);
                 _contexto.SaveChanges();
                 resultado = new IdentityError()
                 {
@@ -63,7 +61,7 @@ namespace Final.Models
 
         public Cliente Un_Cliente_Model(int ClienteId)
         {
-            // return _contexto.Cliente.Where(c => c.ClienteId == ClienteId).FirstOrDefault();
+            //return _contexto.Cliente.Where(c => c.ClienteId == ClienteId).FirstOrDefault();
             Cliente cliente = (from c in _contexto.Cliente
                                where c.ClienteId == ClienteId
                                select c).FirstOrDefault();
@@ -176,9 +174,10 @@ namespace Final.Models
             object[] objeto = { dato };
             listaRegresa.Add(objeto);
             return listaRegresa;
+        }
+        }
+      
 
 
-        }*/
     }
 }
-
