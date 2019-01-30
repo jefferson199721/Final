@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Final.Data.Migrations
 {
-    public partial class hgh : Migration
+    public partial class jef123 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

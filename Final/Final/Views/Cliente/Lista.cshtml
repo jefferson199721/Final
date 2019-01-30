@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Final.Models.Cliente>
+@{
+    ViewData["Title"] = "Lista";
+}
+<h2>Lista de Clientes</h2>
+
+<p>
+    <a class="btn btn-primary" data-toggle="modal" data-target="#Ingreso_Cliente">Nuevo Cliente</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombres
+            </th>
+            <th>
+                Apellidos
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                Correo
+            </th>
+            <th>
+                Categoria
+            </th>
+            <th>
+                Garantia
+            </th>
+            <th>
+                FechaIngreso
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="Cuerpo_Cliente"></tbody>
+</table>
+
+<div class="modal fade" id="Ingreso_Cliente" tabindex="-1" role="dialog" aria-labelledby="EtiquetaModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="EtiquetaModal">
+                    Ingreso de Clientes
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="hidden" name="ClienteId" id="ClienteId" />
+                    <div class="form-group">
+                        <label class="control-label">Nombres</label>
+                        <input id="Nombres" name="Nombres" class="form-control"
+                               type="text" placeholder="Ingrese la Nombres del cliente" />
+                        <span id="control_Cedula" class="label-danger hidden">Campo Obligatorio</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Apellidos</label>
+                        <input id="Apellidos" name="Apellidos" class="form-control"
+                               type="text" placeholder="Ingrese el Apellidos del cliente" />
+                        <span id="control_Nombre" class="label-danger hidden">El Apellidos es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Telefono</label>
+                        <input id="Telefono" name="Telefono" class="form-control"
+                               type="text" placeholder="Ingrese el Telefono del cliente" />
+                        <span id="control_Apellido" class="label-danger hidden">El Telefono es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Correo</label>
+                        <input id="Correo" name="Correo" class="form-control"
+                               type="text" placeholder="Ingrese el Correo del cliente" />
+                        <span id="control_Telefono" class="label-danger hidden">El Correo es requerido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label">Categoria</label>
+                        <input id="Categoria" name="Categoria" class="form-control"
+                               type="text" placeholder="Ingrese el Categoria del cliente" />
+                        <span id="control_Correo" class="label-danger hidden">El Categoria es requerido</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Garantia</label>
+                        <input id="Garantia" name="Garantia" class="form-control"
+                               type="text" placeholder="Ingrese el Garantia del cliente" />
+                        <span id="control_Correo" class="label-danger hidden">El Garantia es requerido</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">FechaIngreso</label>
+                        <input id="FechaIngreso" name="FechaIngreso" class="form-control"
+                               type="date" placeholder="Ingrese el FechaIngreso del cliente" />
+                        <span id="control_Correo" class="label-danger hidden">El FechaIngreso es requerido</span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="">Cerrar</button>
+                <button id="graba" type="button" class="btn btn-primary" onclick="nuevo_Cliente()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
